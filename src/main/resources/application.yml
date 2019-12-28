@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: likeman
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/result?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    use-actual-param-name: true
